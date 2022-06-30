@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "quicksand";
+    src: url(../font/quicksand_bold.);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'quicksand';
+    color: rgba(0, 0, 0, .6);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(white, green);
+}
+
+nav {
+    height: 100vh;
+    background-image: linear-gradient(white, green);
+    display: flex;
+    flex-direction: column;
+    padding: lem;
+    transition: all .5s;
+    transform: translateX(-74-5%);
+    position: fixed;
+    z-index: 99;
+}
+nav .navbar-nav {
+    height: 50%;
+    margin-left: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-item:hover {
+    transform: translateX(-0.2em);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav img{
+    margin-left: lem;
+    height: 65%;
+    border-radius: .2em;
+    padding: .3em;
+    transition: .6em;
+}
+    
+.slide {
+        transform: translateX(0em);
+}
+
+.active {
+    background-image: linear-gradient(white, green);
+}
+
+.container {
+    text-align: justify;
+    padding: 0 0 0 3.9em;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: lem;
+    font-size: 1.5em;
+}
+
+section {
+    padding-bottom: 8em;
+}
+
+/* home */
+#home {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+    padding-top: 5em;
+} 
+
+#home img {
+    width: 25%;
+}
+
+.job {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.job span {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.job h2 {
+    font-size: 2.5em;
+}
+
+.job h3 {
+    font-size: 2em;
+}
+
+/* about*/
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+}
+
+.about .box {
+    width: 10.8em;
+    height: 12.7em;
+    border: .5em solid rgba(170, 118, 219);
+    position: absolute;
+    top: 1.5em;
+    left: -1.3em;
+    z-index: 1;
+}
+
+.about img {
+    width: 12em;
+    box-shadow: -.1em .1em 1em rgba(170, 118, 219);
+    position: relative;
+    z-index: 2;
+}
+
+.about p {
+    width: 30%;
+    padding: 0 1em 1em;
+}
+
+/* collections */
+#collections .row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.cart {
+    width: 20%;
+    border: .15em solid rgba(137, 78, 201);
+    margin: 0.5em;
+    padding: 1em 0;
+    transition: all .3s;
+    box-shadow: 0.1em .1em 1em rgba(170, 118, 219);
+    cursor: pointer;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    border: 0.15em solid snow;
+}
+
+.card h4 {
+    margin-bottom: 1em;
+}
+
+.card button {
+    background: rgb(230, 204, 255);
+}
+
+.card button {
+    background: rgba(130, 78, 201);
+    border: .15em 1.8em;
+    transition: all .3s;
+}
+
+.card .image {
+    position: absolute;
+    background: 1em;
+}
+
+.card:hover button {
+    border: .15em solid snow;
+    cursor: pointer;
+}
+
+/* contact */
+#contact {
+    margin-bottom: 2.5em;
+}
+
+#contact .fore-group {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.fore-group ul {
+    width: 50%;
+}
+
+.fore-group li {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.fore-group input, button, textarea {
+    padding: .5em;
+    border: none;
+    border-radius: .2em;
+    background-image: linear-gradient(to right button, white, green);
+}
+
+.fore-group label {
+    margin-bottom: .5em;
+}
+
+footer .row {
+    height: 5em;
+    padding: 0 0 .5em 3.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: green;
+}
